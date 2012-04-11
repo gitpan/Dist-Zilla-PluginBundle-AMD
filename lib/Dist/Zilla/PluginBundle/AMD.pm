@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.001';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.002';
 }
 # ABSTRACT: Build your distributions like AMD does
 
@@ -357,7 +357,10 @@ method configure {
 
 
 
-    $self->add_plugins('NextRelease');
+    $self->add_plugins('CheckChangesHasContent');
+
+    $self->add_plugins(['NextRelease' =>
+                       { format => '%-9v %{yyyy-MM-dd}d' }]);
 
     $self->add_plugins(['Git::CheckFor::CorrectBranch' =>
                         { release_branch => ($self->has_release_branch
@@ -430,6 +433,8 @@ It is roughly equivalent to:
   config_plugin = @AMD
 
   [AutoPrereqs]
+
+  [CheckChangesHasContent]
 
   [NextRelease]
 

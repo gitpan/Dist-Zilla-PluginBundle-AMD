@@ -24,6 +24,7 @@
          "requires" : {
             "Dist::Zilla::Plugin::Authority" : "0",
             "Dist::Zilla::Plugin::AutoPrereqs" : "0",
+            "Dist::Zilla::Plugin::CheckChangesHasContent" : "0",
             "Dist::Zilla::Plugin::EOLTests" : "0.02",
             "Dist::Zilla::Plugin::MetaConfig" : "0",
             "Dist::Zilla::Plugin::MetaJSON" : "0",
@@ -69,7 +70,7 @@
          "web" : "http://github.com/amd/Dist-Zilla-PluginBundle-AMD"
       }
    },
-   "version" : "0.001",
+   "version" : "0.002",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -191,6 +192,11 @@
             "class" : "Dist::Zilla::Plugin::AutoPrereqs",
             "name" : "@AMD/AutoPrereqs",
             "version" : "4.300014"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CheckChangesHasContent",
+            "name" : "@AMD/CheckChangesHasContent",
+            "version" : "0.004"
          },
          {
             "class" : "Dist::Zilla::Plugin::NextRelease",
