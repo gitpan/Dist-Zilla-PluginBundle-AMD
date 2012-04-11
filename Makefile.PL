@@ -50,7 +50,7 @@ my %WriteMakefileArgs = (
     "Pod::Weaver::PluginBundle::AMD" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }

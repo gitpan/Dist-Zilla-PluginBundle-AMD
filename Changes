@@ -1,7 +1,7 @@
 Revision history for Dist-Zilla-PluginBundle-AMD
 
-0.002     2012-04-11
-        - NextRelease.0.002     2012-04-11 more CPAN::Changes::Spec conform
+0.003     2012-04-11
+        - NextRelease.0.003     2012-04-11 more CPAN::Changes::Spec conform
         - add [CheckChangesHasContent]
 
 0.001     2012-04-10
