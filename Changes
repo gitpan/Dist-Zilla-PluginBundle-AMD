@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-AMD
 
+0.005     2012-05-23
+        - more explicit Prereqs
+
 0.004     2012-05-23
         - big Dist::Zilla roundhouse kick
         - fix add_bundle('Git')

@@ -20,6 +20,8 @@ my %WriteMakefileArgs = (
   "LICENSE" => "open_source",
   "NAME" => "Dist::Zilla::PluginBundle::AMD",
   "PREREQ_PM" => {
+    "Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch" => 0,
+    "Dist::Zilla::PluginBundle::Git" => 0,
     "Method::Signatures::Simple" => 0,
     "Moose" => "1.00",
     "Moose::Util::TypeConstraints" => 0,
@@ -29,7 +31,7 @@ my %WriteMakefileArgs = (
     "MooseX::Types::URI" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.004",
+  "VERSION" => "0.005",
   "test" => {
     "TESTS" => "t/*.t"
   }

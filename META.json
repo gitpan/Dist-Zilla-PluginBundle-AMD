@@ -21,6 +21,8 @@
       },
       "runtime" : {
          "requires" : {
+            "Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch" : "0",
+            "Dist::Zilla::PluginBundle::Git" : "0",
             "Method::Signatures::Simple" : "0",
             "Moose" : "1.00",
             "Moose::Util::TypeConstraints" : "0",
@@ -45,7 +47,7 @@
          "web" : "http://github.com/amd/Dist-Zilla-PluginBundle-AMD"
       }
    },
-   "version" : "0.004",
+   "version" : "0.005",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -207,6 +209,17 @@
             "class" : "Dist::Zilla::Plugin::Git::Push",
             "name" : "@AMD/@Git/Push",
             "version" : "1.121010"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Prereqs",
+            "config" : {
+               "Dist::Zilla::Plugin::Prereqs" : {
+                  "phase" : "runtime",
+                  "type" : "requires"
+               }
+            },
+            "name" : "Prereqs",
+            "version" : "4.300016"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
