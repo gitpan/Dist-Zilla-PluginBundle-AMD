@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.003';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.004';
 }
 # ABSTRACT: Build your distributions like AMD does
 
@@ -374,7 +374,7 @@ method configure {
             $self->add_plugins('Git::NextVersion');
     }
 
-    $self->add_bundle('@Git');
+    $self->add_bundle('Git');
 }
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -448,19 +448,9 @@ It is roughly equivalent to:
 
   [@Git]
 
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Florian Ragwitz
-
-=item *
+=head1 AUTHOR
 
 AMD OSRC Tapper Team <tapper@amd64.org>
-
-=back
 
 =head1 COPYRIGHT AND LICENSE
 

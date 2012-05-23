@@ -10,14 +10,8 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Build your distributions like AMD does",
-  "AUTHOR" => "Florian Ragwitz, AMD OSRC Tapper Team <tapper\@amd64.org>",
-  "BUILD_REQUIRES" => {
-    "File::Find" => 0,
-    "File::Temp" => 0,
-    "Test::More" => 0,
-    "strict" => 0,
-    "warnings" => 0
-  },
+  "AUTHOR" => "AMD OSRC Tapper Team <tapper\@amd64.org>",
+  "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -26,20 +20,6 @@ my %WriteMakefileArgs = (
   "LICENSE" => "open_source",
   "NAME" => "Dist::Zilla::PluginBundle::AMD",
   "PREREQ_PM" => {
-    "Dist::Zilla::Plugin::Authority" => 0,
-    "Dist::Zilla::Plugin::AutoPrereqs" => 0,
-    "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
-    "Dist::Zilla::Plugin::EOLTests" => "0.02",
-    "Dist::Zilla::Plugin::MetaConfig" => 0,
-    "Dist::Zilla::Plugin::MetaJSON" => 0,
-    "Dist::Zilla::Plugin::MetaResources" => 3,
-    "Dist::Zilla::Plugin::NoTabsTests" => 0,
-    "Dist::Zilla::Plugin::PodWeaver" => 0,
-    "Dist::Zilla::Plugin::StaticVersion" => 0,
-    "Dist::Zilla::Plugin::TaskWeaver" => 0,
-    "Dist::Zilla::PluginBundle::Classic" => 0,
-    "Dist::Zilla::PluginBundle::Filter" => 0,
-    "Dist::Zilla::Role::PluginBundle::Easy" => 0,
     "Method::Signatures::Simple" => 0,
     "Moose" => "1.00",
     "Moose::Util::TypeConstraints" => 0,
@@ -47,10 +27,9 @@ my %WriteMakefileArgs = (
     "MooseX::Types::Moose" => 0,
     "MooseX::Types::Structured" => "0.20",
     "MooseX::Types::URI" => 0,
-    "Pod::Weaver::PluginBundle::AMD" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }
