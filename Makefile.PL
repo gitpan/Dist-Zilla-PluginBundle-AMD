@@ -20,7 +20,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "open_source",
   "NAME" => "Dist::Zilla::PluginBundle::AMD",
   "PREREQ_PM" => {
+    "Dist::Zilla::Plugin::Authority" => 0,
+    "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
+    "Dist::Zilla::Plugin::EOLTests" => 0,
     "Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch" => 0,
+    "Dist::Zilla::Plugin::NoTabsTests" => 0,
+    "Dist::Zilla::Plugin::PodWeaver" => 0,
     "Dist::Zilla::PluginBundle::Git" => 0,
     "Method::Signatures::Simple" => 0,
     "Moose" => "1.00",
@@ -29,9 +34,10 @@ my %WriteMakefileArgs = (
     "MooseX::Types::Moose" => 0,
     "MooseX::Types::Structured" => "0.20",
     "MooseX::Types::URI" => 0,
+    "Pod::Weaver::PluginBundle::AMD" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.005",
+  "VERSION" => "4.0.3",
   "test" => {
     "TESTS" => "t/*.t"
   }

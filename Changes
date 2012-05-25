@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-AMD
 
+4.0.3     2012-05-25
+        - even more explicit Prereqs
+
 0.005     2012-05-23
         - more explicit Prereqs
 
