@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '4.0.3';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.006';
 }
 # ABSTRACT: Build your distributions like AMD does
 
