@@ -37,7 +37,7 @@ my %WriteMakefileArgs = (
     "Pod::Weaver::PluginBundle::AMD" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.006",
+  "VERSION" => "4.0.4",
   "test" => {
     "TESTS" => "t/*.t"
   }

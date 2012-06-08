@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.006';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '4.0.4';
 }
 # ABSTRACT: Build your distributions like AMD does
 
@@ -341,7 +341,7 @@ method configure {
             do_metadata => 1,
         }],
         [EOLTests => {
-            trailing_whitespace => !$self->disable_trailing_whitespace_tests,
+            trailing_whitespace => $self->disable_trailing_whitespace_tests ? 0 : 1,
         }],
     );
 
@@ -356,7 +356,7 @@ method configure {
     $self->add_plugins('AutoPrereqs') if $self->auto_prereqs;
 
 
-
+    $self->add_plugins('Git::Describe');
     $self->add_plugins('CheckChangesHasContent');
 
     $self->add_plugins(['NextRelease' =>
@@ -433,6 +433,7 @@ It is roughly equivalent to:
   config_plugin = @AMD
 
   [AutoPrereqs]
+  [Git::Describe]
 
   [CheckChangesHasContent]
 
