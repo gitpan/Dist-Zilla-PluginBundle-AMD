@@ -3,11 +3,9 @@ BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '4.0.4';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.007';
 }
 # ABSTRACT: Build your distributions like AMD does
-
-
 
 use Moose 1.00;
 use Method::Signatures::Simple;

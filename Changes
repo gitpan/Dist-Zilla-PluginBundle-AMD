@@ -1,6 +1,6 @@
 Revision history for Dist-Zilla-PluginBundle-AMD
 
-4.0.4     2012-06-08
+0.007     2012-06-08
         - add [Git::Describe]
         - fix a 'Odd number of elements in anonymous hash' in eol tests
 

@@ -53,7 +53,7 @@
          "web" : "http://github.com/amd/Dist-Zilla-PluginBundle-AMD"
       }
    },
-   "version" : "4.0.4",
+   "version" : "0.007",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
