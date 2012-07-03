@@ -1,9 +1,11 @@
 package Dist::Zilla::PluginBundle::AMD;
+# git description: v0.008-3-gdf0ed50
+
 BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.008';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.009';
 }
 # ABSTRACT: Build your distributions like AMD does
 
@@ -372,7 +374,7 @@ method configure {
             $self->add_plugins('Git::NextVersion');
     }
 
-    $self->add_bundle('Git');
+    $self->add_bundle('@Git');
 }
 
 with 'Dist::Zilla::Role::PluginBundle::Easy';

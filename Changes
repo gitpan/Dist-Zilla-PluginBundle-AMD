@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-AMD
 
+0.009     2012-07-03
+        - more deps declared
+
 0.008     2012-06-18
         - recover from version bummer, *sigh*
 
