@@ -1,11 +1,11 @@
 package Dist::Zilla::PluginBundle::AMD;
-# git description: v0.008-3-gdf0ed50
+# git description: v0.009-1-g38de993
 
 BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.009';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.010';
 }
 # ABSTRACT: Build your distributions like AMD does
 
@@ -81,6 +81,12 @@ has disable_pod_coverage_tests => (
 );
 
 has disable_trailing_whitespace_tests => (
+    is      => 'ro',
+    isa     => Bool,
+    default => 0,
+);
+
+has disable_tab_tests => (
     is      => 'ro',
     isa     => Bool,
     default => 0,
@@ -321,8 +327,10 @@ method configure {
         MetaJSON
         PkgVersion
         PodSyntaxTests
-        NoTabsTests
     ));
+
+    $self->add_plugins('NoTabsTests')
+        unless $self->disable_tab_tests;
 
     $self->add_plugins('PodCoverageTests')
         unless $self->disable_pod_coverage_tests;
