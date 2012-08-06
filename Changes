@@ -1,5 +1,8 @@
 Revision history for Dist-Zilla-PluginBundle-AMD
 
+0.011     2012-08-06
+        - +Dist::Zilla::Plugin::AssertOS
+
 0.010     2012-07-05
         - new option "disable_tab_tests"
 

@@ -20,6 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "open_source",
   "NAME" => "Dist::Zilla::PluginBundle::AMD",
   "PREREQ_PM" => {
+    "Dist::Zilla::Plugin::AssertOS" => 0,
     "Dist::Zilla::Plugin::Authority" => 0,
     "Dist::Zilla::Plugin::AutoPrereqs" => 0,
     "Dist::Zilla::Plugin::CheckChangesHasContent" => 0,
@@ -47,7 +48,7 @@ my %WriteMakefileArgs = (
     "Pod::Weaver::PluginBundle::AMD" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.010",
+  "VERSION" => "0.011",
   "test" => {
     "TESTS" => "t/*.t"
   }

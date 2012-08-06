@@ -1,11 +1,11 @@
 package Dist::Zilla::PluginBundle::AMD;
-# git description: v0.009-1-g38de993
+# git description: v0.010-2-g993fa5a
 
 BEGIN {
   $Dist::Zilla::PluginBundle::AMD::AUTHORITY = 'cpan:AMD';
 }
 {
-  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.010';
+  $Dist::Zilla::PluginBundle::AMD::VERSION = '0.011';
 }
 # ABSTRACT: Build your distributions like AMD does
 
